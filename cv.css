@@ -59,7 +59,7 @@ body {
     margin: 2vh;
     background: linear-gradient( #fed9b7be, #0080a79d );
     color: var(--vanilla--);
-    border-style: ;
+
     border-radius: 30px;
     padding: 1.5vh;
     width: 20vw;
@@ -259,6 +259,7 @@ flex-basis: 50%;
     align-items: center;
     width: 80%;
     justify-content: space-between;
+    
 
 }
 .competence > img{
@@ -274,6 +275,7 @@ flex-basis: 50%;
     border: 2px solid var(--chocolat--);
     border-radius: 20px;
     margin-left: 1vw;
+    width: 20vw;
 }
 
 #quatreVingt{
@@ -281,6 +283,7 @@ flex-basis: 50%;
     width: 80%;
     text-align: center;
     border-radius: 20px;
+    animation : animationSkillsToEighty 3s
 }
 
 #soixanteDix{
@@ -288,6 +291,7 @@ flex-basis: 50%;
     width: 70%;
     text-align: center;
     border-radius: 20px;
+    animation: animateSkillsToSeventy 3s
 }
 
 #quatreVingtDix{
@@ -295,6 +299,7 @@ flex-basis: 50%;
     width: 90%;
     text-align: center;
     border-radius: 20px;
+    animation : animateSkillsToNinety 3s
 }
 
 
@@ -303,6 +308,8 @@ flex-basis: 50%;
     width: 30%;
     text-align: center;
     border-radius: 20px;
+    animation : animateSkillsToThirty 3s
+    
 
 }
 #competencePart{
@@ -312,10 +319,49 @@ flex-basis: 50%;
     align-items: center;
 }
 
+@keyframes animateSkillsToSeventy{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%
+    }
+    
+}
+@keyframes animateSkillsToNinety{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 90%
+    }
+}
+@keyframes animateSkillsToThirty{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 30%
+    }
+}
+@keyframes animationSkillsToEighty{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%
+    }
+}
+
+
+
 @media (max-width : 680px){
-    body{
-        flex-direction: column;
-    } 
+    
+body{
+    
+    flex-direction: column;
+}
+    
 
 #imgProfil{
     width: 30vw;
@@ -375,5 +421,7 @@ text-align: center;
 #headerLeftPart>h2 {
     width: 100%
 
+
+}
 
 }
